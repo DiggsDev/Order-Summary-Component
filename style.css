@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+	background-image: url("./images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: auto 500px;
+    background-color: hsl(225, 100%, 94%);
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+h1, h2 {
+    color: hsl(223, 47%, 23%)
+}
+
+.cardContentSummary h1 {
+    font-weight: 900;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.cardContentSummary p {
+    color: hsl(224, 23%, 55%);
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.cardContentSummary {
+    margin-bottom: 25px;
+}
+
+.card {
+    background-color: white;
+    width: 350px;
+    border-radius: 15px;
+    box-shadow: 0 15px 20px hsl(224, 23%, 55%);
+}
+
+.cardContent {
+    text-align: center;
+    padding: 30px;
+}
+
+.cardPlan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 15px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.cardButtons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.heroImage {
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+    /* height is weird, there's a gap at the bottom of the div ?!?! */
+}
