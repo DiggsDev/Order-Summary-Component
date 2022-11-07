@@ -7,7 +7,7 @@
 body {
 	background-image: url("./images/pattern-background-desktop.svg");
     background-repeat: no-repeat;
-    background-size: auto 490px;
+    background-size: 100% auto;
     background-color: hsl(225, 100%, 94%);
     font-family: 'Red Hat Display', sans-serif;
     line-height: 1.5;
@@ -42,7 +42,8 @@ h1, h2 {
 
 .card {
     background-color: white;
-    width: 350px;
+    max-width: 350px;
+    min-width: 300px;
     border-radius: 15px;
     box-shadow: 0 15px 20px hsl(224, 23%, 55%);
 }
@@ -93,7 +94,18 @@ h1, h2 {
 .cardPlanChange a {
     color: hsl(223, 47%, 23%);
     font-weight: 900;
-    font-size: 14px;
+    font-size: 12px;
+}
+
+.cardPlanChange a:visited {
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+    font-size: 12px;
+}
+
+.cardPlanChange a:hover {
+    color: hsla(245, 75%, 52%, 0.651);
+    text-decoration: none;
 }
 
 .cardButtons {
@@ -106,5 +118,35 @@ h1, h2 {
 .heroImage {
     width: 100%;
     border-radius: 15px 15px 0 0;
-    /* height is weird, there's a gap at the bottom of the div ?!?! */
+}
+
+.payment {
+    border: none;
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Red Hat Display', sans-serif;
+    cursor: pointer;
+    font-weight: 900;
+    border-radius: 10px;
+    margin: 0 0 30px 0;
+    width: 100%;
+}
+
+.payment:hover {
+    background-color: hsla(245, 75%, 52%, 0.671);
+}
+
+.cardButtons a {
+    text-decoration: none;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 900;
+    color: hsl(224, 23%, 55%);
+}
+
+.cardButtons a:hover {
+    color: hsl(223, 47%, 23%);
 }
