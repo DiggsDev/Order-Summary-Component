@@ -7,9 +7,10 @@
 body {
 	background-image: url("./images/pattern-background-desktop.svg");
     background-repeat: no-repeat;
-    background-size: auto 500px;
+    background-size: auto 490px;
     background-color: hsl(225, 100%, 94%);
     font-family: 'Red Hat Display', sans-serif;
+    line-height: 1.5;
 }
 
 h1, h2 {
@@ -53,12 +54,46 @@ h1, h2 {
 
 .cardPlan {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     background-color: hsl(225, 100%, 98%);
     border-radius: 15px;
     padding: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
+    height: 75px;
+}
+
+.cardPlanIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 15px;
+}
+
+.planIconImage {
+    width: 40px;
+}
+
+.cardPlan h2 {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.cardPlan p {
+    font-weight: 500;
+    font-size: 11px;
+    color: hsl(224, 23%, 55%);
+}
+
+.cardPlanTypeCost {
+    text-align: left;
+    width: 100%;
+}
+
+.cardPlanChange a {
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+    font-size: 14px;
 }
 
 .cardButtons {
